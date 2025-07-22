@@ -254,7 +254,8 @@ box-shadow: -1px 21px 45px #00000040; /* 40 = 25% in hex */
   }
 
   .app-content {
-    padding: 1.5rem;
+     padding: 0.75rem 0 0 0;
+
   }
 
   form-page {
@@ -274,7 +275,7 @@ box-shadow: -1px 21px 45px #00000040; /* 40 = 25% in hex */
 
 
   .app-content {
-    padding: 1rem;
+  padding: 0.75rem 0 0 0;
   }
   .profile-box{
     gap: 1rem;
@@ -288,6 +289,9 @@ padding: 0;
 }
 .rhs-logo {
 display: none;
+}
+.form-page{
+  max-width: 100%;
 }
 form .block .row{
   flex-direction: column;
