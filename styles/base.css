@@ -1,0 +1,419 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+
+@media (min-width: 1025px) {
+  html {
+    font-size: calc((100vw / 1280) * 16) !important;
+
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: calc((100vw / 1024) * 16) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: calc((100vw / 390) * 16) !important;
+
+  }
+}
+
+
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+ /* font-family: "Jost", sans-serif !important;
+  font-family: "Inter", sans-serif; */
+
+    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --primary-color: #CDDBE4;
+  --secondary-color: #C6B98B;
+  --neutral-color: #8E8F8F;
+  --info-color: #295BFF;
+  --main-bg-color: #2B414F;
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --sec-width: 83.813rem;
+  --sec-vertical-padding: 6rem;
+}
+@media (max-width: 1024px) {
+  :root {
+    --sec-width: 54.833rem;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --sec-width: 42rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+img , svg{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.only-tab,
+.only-mob {
+  display: none;
+}
+
+.only-tab-and-mobile {
+  display: none;
+}
+
+
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.875rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.625rem;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 2.875rem; 
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 1.25rem; 
+  color: rgb(0, 0, 0);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0px;
+
+}
+label {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0px;
+
+}
+
+
+
+
+/* ********** COMMON BTNS ************* */
+
+button {
+  border: none;
+  background-color: transparent;
+  display: block;
+  box-shadow: none;
+      cursor: pointer;
+}
+
+.btn-primary 
+  {
+      background-color: var(--info-color);
+      color: #fff;
+      border: 1px solid var(--info-color);
+      border-radius: .5rem;
+      padding: 0.5rem 3rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+      margin: 0rem;
+      display: block;
+
+      &:hover {
+       background-color: var(--info-color);
+      color: #fff;
+      }
+   
+
+  &:focus {
+background-color: var(--info-color);
+      color: #fff;
+  }
+
+ 
+}
+
+
+.btn-outlined {
+  background-color: transparent;
+  color: var(--white);
+  text-align: center;
+ border-radius: .5rem;
+      padding: 0.5rem 3rem;
+  font-size: 0.875rem; 
+       line-height: 1.25rem;
+  transition: all 1s ease;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0; 
+  border: 1px solid var(--white);
+margin: 0;
+  &:hover {
+   background-color: transparent;
+  color: var(--white);
+
+  }
+
+  &:focus {
+    background-color: transparent;
+  color: var(--white);
+
+  }
+
+  
+}
+
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.input-group input {
+  border-right-color: #f5f5f5;
+}
+
+.input-group .input-group-text {
+  background-color: #f5f5f5;
+}
+
+
+.invalid-feedback {
+  display: block !important;
+}
+
+.custom-checkbox{
+  color:var(--white);
+     font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+/* Hide the default checkbox */
+.custom-checkbox input {
+  display: none;
+}
+
+/* Custom checkmark box */
+.custom-checkbox .checkmark {
+   width: 1rem;
+ height: 1rem;
+ border-radius: .25rem;
+ border: 1px solid #999999;
+ background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .5625rem;
+  position: relative;
+  margin-top: -0.1875rem;
+}
+
+/* Checked state */
+.custom-checkbox input:checked + .checkmark {
+  background-color: var(--main-bg-color); /* accent color */
+}
+
+/* Optional: checkmark icon */
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 0.3125rem;
+  top: 0.125rem;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+
+
+.h-100vh {
+  height: 100vh;
+}
+
+
+
+
+/* ********** POSITIONS ************* */
+
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999999;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999999;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #999999;
+}
+
+.text-danger {
+  font-size: 0.75rem; 
+  margin-top: 0.125rem; 
+}
+
+.slick-prev::before {
+  opacity: 1;
+}
+
+.slick-next::before {
+  opacity: 1;
+}
+
+
+@media (max-width:1024px) {
+  .only-web {
+    display: none;
+  }
+
+  .only-tab {
+    display: block;
+  }
+
+  .only-tab-and-mobile {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.625rem; 
+    line-height: 3rem; 
+    margin-bottom: 0.625rem; 
+  }
+
+  h2 {
+    font-size: 2.375rem; 
+    line-height: 2.75rem; 
+    margin-bottom: 0.625rem; 
+    font-weight: 350;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+  }
+  label {
+    font-size: 1.25rem;
+    line-height: 2.125rem; 
+  }
+
+  .cr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .btn-primary{
+    padding: 1.25rem 1.5rem;
+    font-size: 1.167rem;
+  }
+
+  .btn-secondary{
+    padding: 1.25rem 1.5rem;
+    font-size: 1.167rem;
+  }
+
+
+
+}
+
+
+
+@media (max-width:767px) {
+
+
+  .only-mob {
+    display: block;
+  }
+
+  .only-tab {
+    display: none;
+  }
+
+ 
+
+
+  .btn-primary{
+   
+   
+  }
+
+  .btn-outlined{
+    
+  }
+
+}
+
