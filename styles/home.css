@@ -299,4 +299,13 @@ display: none;
 form .block .row{
   flex-direction: column;
 }
+.button-box{
+  justify-content: space-between;
+gap: unset  ;
+}
+.button-box{
+  button{
+    width: 10.3125rem;
+  }
+}
 }

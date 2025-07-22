@@ -156,6 +156,7 @@ button {
       font-size: 0.875rem;
       line-height: 1.25rem;
       font-weight: 500;
+  letter-spacing: .3px; 
       transition: background-color 0.3s ease;
       margin: 0rem;
       display: block;
@@ -187,7 +188,7 @@ background-color: var(--info-color);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  letter-spacing: 0; 
+  letter-spacing: .3px; 
   border: 1px solid var(--white);
 margin: 0;
   &:hover {
