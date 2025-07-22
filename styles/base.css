@@ -349,44 +349,13 @@ textarea:focus {
     display: block;
   }
 
-  h1 {
-    font-size: 2.625rem; 
-    line-height: 3rem; 
-    margin-bottom: 0.625rem; 
-  }
-
-  h2 {
-    font-size: 2.375rem; 
-    line-height: 2.75rem; 
-    margin-bottom: 0.625rem; 
-    font-weight: 350;
-  }
-
-  p {
-    font-size: 1.25rem;
-    line-height: 2.125rem;
-  }
-  label {
-    font-size: 1.25rem;
-    line-height: 2.125rem; 
-  }
-
+ 
   .cr {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .btn-primary{
-    padding: 1.25rem 1.5rem;
-    font-size: 1.167rem;
-  }
-
-  .btn-secondary{
-    padding: 1.25rem 1.5rem;
-    font-size: 1.167rem;
-  }
-
-
+ 
 
 }
 
@@ -406,14 +375,7 @@ textarea:focus {
  
 
 
-  .btn-primary{
-   
-   
-  }
 
-  .btn-outlined{
-    
-  }
 
 }
 

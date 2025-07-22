@@ -258,9 +258,7 @@ box-shadow: -1px 21px 45px #00000040; /* 40 = 25% in hex */
 
   }
 
-  form-page {
-    max-width: 90%;
-  }
+  
 }
 
 /* Mobile and smaller tablets */
@@ -286,6 +284,10 @@ box-shadow: -1px 21px 45px #00000040; /* 40 = 25% in hex */
 .profile-box .mobile-dropdown-btn{
 display: block;
 padding: 0;
+}
+.hamburger-icon{
+  width: 1.125rem;
+  height: 0.75rem;
 }
 .rhs-logo {
 display: none;
