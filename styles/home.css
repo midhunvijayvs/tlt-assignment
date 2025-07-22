@@ -292,6 +292,7 @@ display: none;
 }
 .form-page{
   max-width: 100%;
+  width: 100%;
 }
 form .block .row{
   flex-direction: column;
