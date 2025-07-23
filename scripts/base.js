@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       textElement1.textContent = "Others (" + this.textContent + ")";
     }
+    textElement1.style.color = "#ffffff";
+
     selectBox1.classList.remove("open");
   });
 });
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   allOptions2.forEach(option => {
     option.addEventListener("click", function () {
       textElement2.textContent = this.textContent;
+       textElement2.style.color = "#ffffff";
       selectBox2.classList.remove("open");
     });
   });
