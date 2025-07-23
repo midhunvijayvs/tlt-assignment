@@ -93,7 +93,7 @@ display: none;
 }
 
 .form-page {
-  max-width: 78.5rem;
+  max-width: 77.7rem;
   margin: 0 auto;
   background-color: var(--main-bg-color);
   border-radius: 0.25rem 0.25rem 0 0;
@@ -302,6 +302,11 @@ form .block .row{
 }
 form .block .row.location-row{
 gap:0.75rem
+}
+
+.custom-checkbox input:checked + .checkmark::after{
+
+  top:0.1rem
 }
 .button-box{
   justify-content: space-between;
